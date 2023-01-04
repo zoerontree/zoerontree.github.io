@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "IMF lending outstanding",
+    "subtitle": "Credit outstanding to all members, SDRs (billions), Source: IMF",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/mayawesthorp/mayawesthorp.github.io/main/homework2_IMFlending.csv"
+  },
+  "height": 350,
+  "width": 380,
+  "mark": {"type": "bar", "color": "rgb(182,217,207)"},
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {"title": null, "grid": false, "ticks": false, "labelAngle": 45}
+    },
+    "y": {
+      "field": "Totals",
+      "type": "quantitative",
+      "title": "",
+      "axis": {"grid": false}
+    }
+  }
+}
