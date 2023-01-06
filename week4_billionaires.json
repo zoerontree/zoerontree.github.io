@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Countries with the most billionaires",
+      "subtitle": "Ranking the Top 10 Countries with the highest number of billionaires, Source: Wikipedia ",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/zoerontree/zoerontree.github.io/main/week4_number_billionaires.csv",
+      "format": {"type": "csv"}
+    },
+    "height": 300,
+    "width": 300,
+    "params": [
+        {"name": "highlight", "select": {"type": "point", "on": "mouseover"}},
+        {"name": "select", "select": "point"}
+      ],
+      "mark": {
+        "type": "bar",
+        "fill": "#4571f4",
+        "stroke": "#f6bbf6",
+        "cursor": "pointer",
+        "tooltip": {"content": "encoding"}
+      },
+    "encoding": {
+      "x": {
+        "field": "Number ofbillionaires",
+        "type": "quantitative",
+        "title": "Number of billionaires",
+        "axis": {"grid": true},
+        "scale": {"domain": [0, 800]}
+      },
+      "y": {
+        "field": "Country/Territory",
+        "type": "ordinal",
+        "sort": [],
+        "title": null
+      },
+      "tooltip": [
+        {"field": "Number of billonaires", "type": "quantitative", "title": "Number of billonaires"}
+      ]
+    }
+  }
