@@ -1,0 +1,30 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Map of Europe",
+      "subtitle": ["Map of Europe by country", ""],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "middle",
+      "color": "black"
+    },
+    "config": {"background": "white", "view": {"stroke": "transparent"}},
+    "width": 550,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/zoerontree/zoerontree.github.io/main/europemap.json",
+      "format": {"type": "topojson", "feature": "continent_Europe_subunits"}
+    },
+    "projection": {"type": "naturalEarth1"},
+    "mark": {
+      "type": "geoshape",
+      "fill": "#6d34ce",
+      "stroke": "white",
+      "strokeWidth": 0.1
+    },
+    "encoding": {
+      "tooltip": [
+        {"field": "properties.geounit", "type": "nominal", "title": "Country"}
+      ]
+    }
+  }
