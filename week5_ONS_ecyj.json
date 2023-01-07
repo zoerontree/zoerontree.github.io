@@ -1,0 +1,36 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/zoerontree/zoerontree.github.io/main/data_ONS-ecyj.json",
+      "format": {"type": "json", "property": "months"}
+    },
+    "title": {
+      "text": "GDP Monthly: Financial and insurance activities",
+      "subtitle": "GDP: Financial and insurance activities from 1997-2022, Source: ONS",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "width": 270,
+    "height": 180,
+    "mark": {"type": "line", "color": "#4571f4"},
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "axis": {"grid": false},
+        "title": ""
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "axis": {"grid": false},
+        "title": "Index"
+      },
+      "tooltip": [
+        {"field": "date", "type": "temporal", "title": "Year"},
+        {"field": "value", "type": "quantitative", "title": "%"}
+      ]
+    }
+  }
