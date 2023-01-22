@@ -1,0 +1,148 @@
+Year,Mental Health Disorders,Value
+1999,Schizophrenia,
+2000,Schizophrenia,0
+2001,Schizophrenia,0
+2002,Schizophrenia,0
+2003,Schizophrenia,0
+2004,Schizophrenia,0
+2005,Schizophrenia,0
+2006,Schizophrenia,0
+2007,Schizophrenia,0
+2008,Schizophrenia,0
+2009,Schizophrenia,0
+2010,Schizophrenia,0
+2011,Schizophrenia,0
+2012,Schizophrenia,0
+2013,Schizophrenia,0
+2014,Schizophrenia,0
+2015,Schizophrenia,0
+2016,Schizophrenia,0
+2017,Schizophrenia,0
+2018,Schizophrenia,0
+2019,Schizophrenia,0
+1999,Bipolar disorder,
+2000,Bipolar disorder,0
+2001,Bipolar disorder,0
+2002,Bipolar disorder,0.02
+2003,Bipolar disorder,0
+2004,Bipolar disorder,0
+2005,Bipolar disorder,0
+2006,Bipolar disorder,0
+2007,Bipolar disorder,0
+2008,Bipolar disorder,0
+2009,Bipolar disorder,0
+2010,Bipolar disorder,0
+2011,Bipolar disorder,0
+2012,Bipolar disorder,0
+2013,Bipolar disorder,0
+2014,Bipolar disorder,0
+2015,Bipolar disorder,0
+2016,Bipolar disorder,0
+2017,Bipolar disorder,0
+2018,Bipolar disorder,0
+2019,Bipolar disorder,0
+1999,Eating disorders,
+2000,Eating disorders,0
+2001,Eating disorders,0
+2002,Eating disorders,0
+2003,Eating disorders,0
+2004,Eating disorders,0
+2005,Eating disorders,0
+2006,Eating disorders,0
+2007,Eating disorders,0
+2008,Eating disorders,0.0625
+2009,Eating disorders,0
+2010,Eating disorders,0
+2011,Eating disorders,0
+2012,Eating disorders,0
+2013,Eating disorders,0
+2014,Eating disorders,0
+2015,Eating disorders,0.058823529
+2016,Eating disorders,0
+2017,Eating disorders,0
+2018,Eating disorders,0
+2019,Eating disorders,0
+1999,Anxiety disorders,
+2000,Anxiety disorders,0.005037783
+2001,Anxiety disorders,-0.002506266
+2002,Anxiety disorders,-0.002512563
+2003,Anxiety disorders,-0.005037783
+2004,Anxiety disorders,-0.005063291
+2005,Anxiety disorders,-0.002544529
+2006,Anxiety disorders,0.00255102
+2007,Anxiety disorders,0.002544529
+2008,Anxiety disorders,0.005076142
+2009,Anxiety disorders,0.005050505
+2010,Anxiety disorders,0
+2011,Anxiety disorders,-0.002512563
+2012,Anxiety disorders,-0.005037783
+2013,Anxiety disorders,-0.005063291
+2014,Anxiety disorders,-0.005089059
+2015,Anxiety disorders,0
+2016,Anxiety disorders,0.002557545
+2017,Anxiety disorders,0.005102041
+2018,Anxiety disorders,0
+2019,Anxiety disorders,0
+1999,Drug use disorders,
+2000,Drug use disorders,-0.013888889
+2001,Drug use disorders,0.014084507
+2002,Drug use disorders,0
+2003,Drug use disorders,0.013888889
+2004,Drug use disorders,0
+2005,Drug use disorders,0.01369863
+2006,Drug use disorders,-0.013513514
+2007,Drug use disorders,0
+2008,Drug use disorders,-0.01369863
+2009,Drug use disorders,0
+2010,Drug use disorders,-0.013888889
+2011,Drug use disorders,0.014084507
+2012,Drug use disorders,0
+2013,Drug use disorders,0
+2014,Drug use disorders,0
+2015,Drug use disorders,0
+2016,Drug use disorders,0.027777778
+2017,Drug use disorders,0.013513514
+2018,Drug use disorders,0
+2019,Drug use disorders,-0.013333333
+1999,Depressive disorders,
+2000,Depressive disorders,0
+2001,Depressive disorders,0
+2002,Depressive disorders,0.002702703
+2003,Depressive disorders,0.002695418
+2004,Depressive disorders,0
+2005,Depressive disorders,0.002688172
+2006,Depressive disorders,-0.00536193
+2007,Depressive disorders,-0.013477089
+2008,Depressive disorders,-0.013661202
+2009,Depressive disorders,-0.011080332
+2010,Depressive disorders,-0.005602241
+2011,Depressive disorders,0
+2012,Depressive disorders,0.002816901
+2013,Depressive disorders,0
+2014,Depressive disorders,0.002808989
+2015,Depressive disorders,0
+2016,Depressive disorders,0.00280112
+2017,Depressive disorders,0
+2018,Depressive disorders,0.002793296
+2019,Depressive disorders,0
+1999,Alcohol use disorders,
+2000,Alcohol use disorders,-0.00625
+2001,Alcohol use disorders,-0.006289308
+2002,Alcohol use disorders,-0.012658228
+2003,Alcohol use disorders,-0.012820513
+2004,Alcohol use disorders,-0.012987013
+2005,Alcohol use disorders,-0.006578947
+2006,Alcohol use disorders,-0.013245033
+2007,Alcohol use disorders,-0.006711409
+2008,Alcohol use disorders,-0.013513514
+2009,Alcohol use disorders,-0.006849315
+2010,Alcohol use disorders,-0.013793103
+2011,Alcohol use disorders,0
+2012,Alcohol use disorders,-0.006993007
+2013,Alcohol use disorders,-0.007042254
+2014,Alcohol use disorders,0
+2015,Alcohol use disorders,0
+2016,Alcohol use disorders,-0.007092199
+2017,Alcohol use disorders,0
+2018,Alcohol use disorders,-0.007142857
+2019,Alcohol use disorders,-0.007194245
