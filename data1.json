@@ -1,0 +1,287 @@
+{
+    "version": "2.0",
+    "class": "dataset",
+    "label": "Individuals - internet use",
+    "source": "ESTAT",
+    "updated": "2023-01-12T23:00:00+0100",
+    "value": {
+        "39": 94.12,
+        "25": 99.21,
+        "42": 97.9,
+        "6": 97.73,
+        "7": 91.63,
+        "35": 100.0,
+        "18": 100.0,
+        "8": 98.27,
+        "10": 99.37,
+        "9": 99.13,
+        "5": 97.43,
+        "11": 99.49,
+        "13": 98.82,
+        "14": 99.12,
+        "0": 97.57,
+        "1": 97.93,
+        "31": 100.0,
+        "15": 96.59,
+        "16": 99.21,
+        "22": 98.33,
+        "12": 99.74,
+        "33": 100.0,
+        "17": 91.97,
+        "20": 98.57,
+        "21": 98.98,
+        "19": 99.77,
+        "37": 98.68,
+        "38": 99.11,
+        "23": 99.44,
+        "24": 98.61,
+        "34": 99.37,
+        "26": 99.56,
+        "27": 99.47,
+        "28": 95.06,
+        "40": 97.38,
+        "32": 100.0,
+        "29": 99.24,
+        "30": 99.34,
+        "41": 90.76,
+        "36": 100.0,
+        "43": 98.87
+    },
+    "id": [
+        "freq",
+        "indic_is",
+        "unit",
+        "ind_type",
+        "geo",
+        "time"
+    ],
+    "size": [
+        1,
+        1,
+        1,
+        1,
+        44,
+        1
+    ],
+    "dimension": {
+        "freq": {
+            "label": "Time frequency",
+            "category": {
+                "index": {
+                    "A": 0
+                },
+                "label": {
+                    "A": "Annual"
+                }
+            }
+        },
+        "indic_is": {
+            "label": "Information society indicator",
+            "category": {
+                "index": {
+                    "I_IU3": 0
+                },
+                "label": {
+                    "I_IU3": "Last internet use: in last 3 months"
+                }
+            }
+        },
+        "unit": {
+            "label": "Unit of measure",
+            "category": {
+                "index": {
+                    "PC_IND": 0
+                },
+                "label": {
+                    "PC_IND": "Percentage of individuals"
+                }
+            }
+        },
+        "ind_type": {
+            "label": "Individual type",
+            "category": {
+                "index": {
+                    "Y16_24": 0
+                },
+                "label": {
+                    "Y16_24": "Individuals, 16 to 24 years old"
+                }
+            }
+        },
+        "geo": {
+            "label": "Geopolitical entity (reporting)",
+            "category": {
+                "index": {
+                    "EU27_2020": 0,
+                    "EU28": 1,
+                    "EU27_2007": 2,
+                    "EU25": 3,
+                    "EU15": 4,
+                    "EA": 5,
+                    "BE": 6,
+                    "BG": 7,
+                    "CZ": 8,
+                    "DK": 9,
+                    "DE": 10,
+                    "EE": 11,
+                    "IE": 12,
+                    "EL": 13,
+                    "ES": 14,
+                    "FR": 15,
+                    "HR": 16,
+                    "IT": 17,
+                    "CY": 18,
+                    "LV": 19,
+                    "LT": 20,
+                    "LU": 21,
+                    "HU": 22,
+                    "MT": 23,
+                    "NL": 24,
+                    "AT": 25,
+                    "PL": 26,
+                    "PT": 27,
+                    "RO": 28,
+                    "SI": 29,
+                    "SK": 30,
+                    "FI": 31,
+                    "SE": 32,
+                    "IS": 33,
+                    "NO": 34,
+                    "CH": 35,
+                    "UK": 36,
+                    "ME": 37,
+                    "MK": 38,
+                    "AL": 39,
+                    "RS": 40,
+                    "TR": 41,
+                    "BA": 42,
+                    "XK": 43
+                },
+                "label": {
+                    "EU27_2020": "European Union - 27 countries (from 2020)",
+                    "EU28": "European Union - 28 countries (2013-2020)",
+                    "EU27_2007": "European Union - 27 countries (2007-2013)",
+                    "EU25": "European Union - 25 countries (2004-2006)",
+                    "EU15": "European Union - 15 countries (1995-2004)",
+                    "EA": "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)",
+                    "BE": "Belgium",
+                    "BG": "Bulgaria",
+                    "CZ": "Czechia",
+                    "DK": "Denmark",
+                    "DE": "Germany (until 1990 former territory of the FRG)",
+                    "EE": "Estonia",
+                    "IE": "Ireland",
+                    "EL": "Greece",
+                    "ES": "Spain",
+                    "FR": "France",
+                    "HR": "Croatia",
+                    "IT": "Italy",
+                    "CY": "Cyprus",
+                    "LV": "Latvia",
+                    "LT": "Lithuania",
+                    "LU": "Luxembourg",
+                    "HU": "Hungary",
+                    "MT": "Malta",
+                    "NL": "Netherlands",
+                    "AT": "Austria",
+                    "PL": "Poland",
+                    "PT": "Portugal",
+                    "RO": "Romania",
+                    "SI": "Slovenia",
+                    "SK": "Slovakia",
+                    "FI": "Finland",
+                    "SE": "Sweden",
+                    "IS": "Iceland",
+                    "NO": "Norway",
+                    "CH": "Switzerland",
+                    "UK": "United Kingdom",
+                    "ME": "Montenegro",
+                    "MK": "North Macedonia",
+                    "AL": "Albania",
+                    "RS": "Serbia",
+                    "TR": "T\u00fcrkiye",
+                    "BA": "Bosnia and Herzegovina",
+                    "XK": "Kosovo (under United Nations Security Council Resolution 1244/99)"
+                }
+            }
+        },
+        "time": {
+            "label": "Time",
+            "category": {
+                "index": {
+                    "2019": 0
+                },
+                "label": {
+                    "2019": "2019"
+                }
+            }
+        }
+    },
+    "extension": {
+        "lang": "EN",
+        "id": "ISOC_CI_IFP_IU",
+        "agencyId": "ESTAT",
+        "version": "1.0",
+        "datastructure": {
+            "id": "ISOC_CI_IFP_IU",
+            "agencyId": "ESTAT",
+            "version": "29.0"
+        },
+        "annotation": [
+            {
+                "type": "DISSEMINATION_DOI_XML",
+                "title": "<adms:identifier xmlns:adms=\"http://www.w3.org/ns/adms#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core.html\" xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"><adms:Identifier rdf:about=\"https://doi.org/10.2908/ISOC_CI_IFP_IU\"><skos:notation rdf:datatype=\"http://purl.org/spar/datacite/doi\">10.2908/ISOC_CI_IFP_IU</skos:notation><dct:creator rdf:resource=\"http://publications.europa.eu/resource/authority/corporate-body/ESTAT\"/><dct:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#date\">2023-01-19T12:50:39</dct:issued></adms:Identifier></adms:identifier>"
+            },
+            {
+                "type": "DISSEMINATION_OBJECT_TYPE",
+                "title": "DATASET"
+            },
+            {
+                "type": "ESMS_HTML",
+                "title": "Explanatory texts (metadata)",
+                "href": "https://ec.europa.eu/eurostat/cache/metadata/en/isoc_i_esms.htm"
+            },
+            {
+                "type": "ESMS_SDMX",
+                "title": "Explanatory texts (metadata)",
+                "href": "https://ec.europa.eu/eurostat/estat-navtree-portlet-prod/BulkDownloadListing?file=metadata/isoc_i_esms.sdmx.zip"
+            },
+            {
+                "type": "OBS_COUNT",
+                "title": "427851"
+            },
+            {
+                "type": "OBS_PERIOD_OVERALL_LATEST",
+                "title": "2022"
+            },
+            {
+                "type": "OBS_PERIOD_OVERALL_OLDEST",
+                "title": "2002"
+            },
+            {
+                "type": "SOURCE_INSTITUTIONS",
+                "text": "Eurostat"
+            },
+            {
+                "type": "UPDATE_DATA",
+                "date": "2023-01-12T23:00:00+0100"
+            },
+            {
+                "type": "UPDATE_STRUCTURE",
+                "date": "2023-01-12T23:00:00+0100"
+            }
+        ],
+        "positions-with-no-data": {
+            "freq": [],
+            "indic_is": [],
+            "unit": [],
+            "ind_type": [],
+            "geo": [
+                2,
+                3,
+                4
+            ],
+            "time": []
+        }
+    }
+}
