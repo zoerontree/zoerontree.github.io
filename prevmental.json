@@ -1,0 +1,51 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Prevalence of mental health disorders, 2019",
+      "subtitle": "Ranking disorders with the highest share of diagnosed population, Source: IHME ",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "#4d92ed",
+      "subtitleColor": "#4d92ed"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/zoerontree/zoerontree.github.io/main/mh_prevalence.csv",
+      "format": {"type": "csv"}
+    },
+    "height": 300,
+    "width": 300,
+    "params": [
+      {"name": "Prevalence", "select": {"type": "point", "on": "mouseover"}},
+      {"name": "Disorders", "select": "point"}
+    ],
+    "mark": {
+      "type": "bar",
+      "fill": "#4571f4",
+      "stroke": "#f6bbf6",
+      "cursor": "pointer",
+      "tooltip": {"content": "encoding"}
+    },
+    "encoding": {
+      "x": {
+        "field": "Prevalence",
+        "type": "quantitative",
+        "title": "Share of population with a mental health disorder (%)",
+        "axis": {"grid": true}
+      },
+      "y": {
+        "field": "Disorders",
+        "type": "ordinal",
+        "sort": [],
+        "title": null
+      },
+      "tooltip": [
+        {
+          "field": "Disorders",
+          "type": "ordinal",
+          "title": "Mental Health Disorder"
+        },
+        {"field": "Prevalence", "type": "quantitative", "title": "Prevalence"}
+      ]
+    }
+  }

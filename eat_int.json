@@ -1,0 +1,86 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/zoerontree/zoerontree.github.io/main/euro_eat_int_15_24.csv"
+    },
+    "height": 350,
+    "width": 350,
+    "title": {
+      "text": "Eating disorders and Internet usage",
+      "subtitle": [
+        "Linear regression on share of population ages 15-24 with eating disorders and use the internet, 2019.",
+        "Source: Eurostat and IHME"
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "color": "#4d92ed"
+    },
+    "layer": [
+      {
+        "mark": {"type": "point", "filled": true},
+        "encoding": {
+          "x": {
+            "field": "Eating Disorders",
+            "type": "quantitative",
+            "title": "Share of the population with eating disorders (%)",
+            "scale": {"domain":[0,3]}},
+          "y": {
+            "field": "Internet use",
+            "type": "quantitative",
+            "title": "Share of the population using the Internet (%)",
+            "scale": {"domain":[90,100]}},
+          "color": {
+            "value":"orient",
+            "field": "Country",
+            "type": "nominal",
+            "legend": null
+          },
+          "tooltip": [
+            {"field": "Country", "type": "nominal"},
+            {
+              "field": "Eating Disorders",
+              "type": "quantitative",
+              "title": "Eating Disorders"
+            },
+            {
+              "field": "Internet use",
+              "type": "quantitative",
+              "title": "Internet use"
+            }
+          ]
+        }
+      },
+      {
+        "mark": {"type": "line", "color": "blueviolet", "strokeDash": [6, 3]},
+        "transform": [
+          {
+            "regression": "Eating Disorders",
+            "on": "Internet use",
+            "extent": [90, 100]
+          }
+        ],
+        "encoding": {
+          "x": {"field": "Eating Disorders", "type": "quantitative"},
+          "y": {"field": "Internet use", "type": "quantitative"}
+        }
+      },
+      {
+        "transform": [
+          {
+            "regression": "Internet use",
+            "on": "Eating Disorders",
+            "params": true
+          },
+          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+        ],
+        "mark": {
+          "type": "text",
+          "color": "blueviolet",
+          "x": "width",
+          "align": "right",
+          "y": -10
+        },
+        "encoding": {"text": {"type": "nominal", "field": "R2"}}
+      }
+    ]
+  }

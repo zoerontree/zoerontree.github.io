@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Relative change in given mental health disorders, 2000 - 2019",
+        "subtitle": "Source: IHME ",
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "anchor": "start",
+        "color": "#4d92ed",
+        "subtitleColor": "#4d92ed"
+      },  
+    "data": {"url": "https://raw.githubusercontent.com/zoerontree/zoerontree.github.io/main/rc_disorders.csv"},
+    "height": 295,
+    "width": 400,
+    "mark": {
+      "type": "line",
+      "point": true
+    },
+    "encoding": {
+      "x": {"timeUnit": "year", "field": "Year","title":"Year"},
+      "y": {"aggregate":"mean", "field": "Value", "type": "quantitative","title":"Percentage Change (%)"},
+      "tooltip": [
+        {"field": "Year", "type": "temporal", "title": "Year"},
+        {
+          "field": "Value",
+          "type": "quantitative",
+          "title": "Percentage Change"
+        },
+        {"field": "Mental Health Disorders", "type": "nominal", "title": "Country"}
+      ],     
+      "color": {"field": "Mental Health Disorders", "type": "nominal"}
+      
+    }
+  }
+  

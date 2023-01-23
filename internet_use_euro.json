@@ -1,0 +1,98 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.2.0.json",
+    "autosize": {"type": "fit-x", "contains": "padding"},
+    "background": "#FFFFFF",
+    "height": 350,
+    "width": 450,
+    "padding": 0,
+    "title": {
+      "text": "Internet Usage, 2000 - 2021",
+      "subtitle": "Source: World Bank API",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "middle",
+      "color": "#4d92ed",
+      "subtitleColor": "#4d92ed"
+    },
+    "data": {
+      "name": "myData",
+      "url": "https://raw.githubusercontent.com/zoerontree/zoerontree.github.io/main/euro_internet.csv"
+    },
+    "mark": {
+      "type": "area",
+      "cursor": "pointer",
+      "line": {"color": "#9bc1f3"},
+      "color": {
+        "x1": 1,
+        "y1": 1,
+        "x2": 1,
+        "y2": 0,
+        "gradient": "linear",
+        "stops": [
+          {"offset": 0, "color": "white"},
+          {"offset": 1, "color": "#9bc1f3"}
+        ]
+      }
+    },
+    "transform": [
+      {"calculate": "year(datum.Year)", "as": "year"},
+      {"filter": "datum.year>minYear"},
+      {"filter": "datum.year<maxYear"},
+      {"calculate": "datum.Internet/100", "as": "percent"}
+    ],
+    "params": [
+      {
+        "name": "minYear",
+        "value": 2000,
+        "bind": {
+          "input": "range",
+          "min": 2000,
+          "max": 2021,
+          "step": 1,
+          "name": "Start Year: "
+        }
+      },
+      {
+        "name": "maxYear",
+        "value": 2021,
+        "bind": {
+          "input": "range",
+          "min": 2000,
+          "max": 2021,
+          "step": 1,
+          "name": "End Year: "
+        }
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": null,
+        "axis": {
+          "grid": false,
+          "labelSeparation": 25,
+          "labelColor": "black",
+          "tickColor": "#dbbdef",
+          "domainColor": "#dbbdef"
+        }
+      },
+      "y": {
+        "field": "percent",
+        "type": "quantitative",
+        "title": "Share of population using the internet",
+        "axis": {
+          "grid": true,
+          "format": "%",
+          "labelColor": "black",
+          "tickColor": "#dbbdef",
+          "domainColor": "#dbbdef"
+        },
+        "scale": {"domain": [0, 0.9]}
+      },
+      "tooltip": [
+        {"field": "year", "type": "nominal", "title": "Year"},
+        {"field": "Internet", "type": "quantitative", "title": "Percentage"}
+      ]
+    }
+  }

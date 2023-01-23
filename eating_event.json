@@ -1,0 +1,52 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple bar chart with embedded data.",
+    "title": {
+      "text": "Eating Disorders by age group, 1995-2019",
+      "subtitle": ["Source: IHME",
+        "Event study: Beginning of internet and social media popularity, 2000"],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "middle",
+      "color": "#4d92ed",
+      "subtitleColor": "#4d92ed"
+    },
+    "height": 365,
+    "width": 400,
+    "data": {"url": "https://raw.githubusercontent.com/zoerontree/zoerontree.github.io/main/eat_years_age.csv"},
+    "layer": [
+      {
+        "mark": "line",
+        "encoding": {
+          "x": {"field": "Year", "type": "temporal"},
+          "y": {"field": "Value", "type": "quantitative","scale": {"domain": [0.4, 0.85]},"title": "Share of population with an eating disorder (%)"},
+          "color": {"field": "Age Group", "type": "nominal","scale": {"scheme": "set1"}},
+          "tooltip": [
+            {"field": "Year", "type": "temporal", "title": "Year"},
+            {
+              "field": "Value",
+              "type": "quantitative",
+              "title": "Eating Disorders"
+            },
+            {"field": "Age Group", "type": "ordinal", "title": "Age Group"}
+          ]
+        }
+      },
+      {
+        "data": {
+          "values": [
+            {
+              "x": 5.5,
+              "y": 0.85
+            }
+        ]
+      },
+        "mark": {"type": "rule", "color": "black", "strokeDash": [8,8]},
+        "encoding": {
+          "x": {"field": "x","scale":{"domain": [1, 25]}, "type": "quantitative","axis":null},
+          "y": {"field": "y", "type": "quantitative"},
+          "color": {"scale":{"scheme": "symbol"}}
+        }
+      }
+    ]
+  }

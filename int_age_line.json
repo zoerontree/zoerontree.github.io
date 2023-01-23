@@ -1,0 +1,55 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json",
+    "data": {"url": "https://raw.githubusercontent.com/zoerontree/zoerontree.github.io/main/us_internet_age_clean.csv"},
+    "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "Year", "timeUnit": "year", "type": "ordinal"},
+        "y": {"field": "Social Media Use", "type": "quantitative"},
+        "color": {"field": "Age Group", "type": "nominal"}
+      }
+    },
+    {
+      "mark": "point",
+      "selection": {
+        "detail": {
+          "type": "single",
+          "on": "mouseover",
+          "nearest": true
+        }
+      },
+      "encoding": {
+        "x": {"field": "date", "timeUnit": "date", "type": "ordinal"},
+        "y": {"field": "counts", "type": "quantitative"},
+        "color": {"field": "Age Group", "type": "nominal"},
+        "size": {
+          "condition": {
+            "selection": {"not": "detail"}, "value": 50
+          },
+          "value": 300
+        }
+      }
+    },
+    {
+      "mark":  {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "dy": -15
+      },
+      "encoding": {
+        "x": {"field": "date", "timeUnit": "date", "type": "ordinal"},
+        "y": {"field": "counts", "type": "quantitative"},
+        "color": {"field": "Age Group", "type": "nominal"},
+        "text": {
+          "condition": {
+            "selection": {"not": "detail"}, "value": " "
+          },
+          "field": "Social Media Use"
+        }
+      }
+    }],
+    "width": 600,
+    "height": 400
+  }
