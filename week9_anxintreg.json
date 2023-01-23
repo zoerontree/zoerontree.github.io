@@ -1,0 +1,84 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/zoerontree/zoerontree.github.io/main/anx_net.csv"
+    },
+    "height": 350,
+    "width": 350,
+    "title": {
+      "text": "Anxiety disorders and Internet usage",
+      "subtitle": [
+        "Linear regression on share of population with anxiety and use the internet globally, 2019.",
+        "Source: World Bank and World Health Organisation"
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "color": "black"
+    },
+    "layer": [
+      {
+        "mark": {"type": "point", "filled": true},
+        "encoding": {
+          "x": {
+            "field": "Anxiety Rate",
+            "type": "quantitative",
+            "title": "Share of the population with anxiety disorders (%)"},
+          "y": {
+            "field": "Internet use",
+            "type": "quantitative",
+            "title": "Share of the population using the Internet (%)"},
+          "color": {
+            "value":"orient",
+            "field": "Country",
+            "type": "nominal",
+            "legend": null
+          },
+          "tooltip": [
+            {"field": "Country", "type": "nominal"},
+            {
+              "field": "Anxiety Rate",
+              "type": "quantitative",
+              "title": "Anxiety rate"
+            },
+            {
+              "field": "Internet use",
+              "type": "quantitative",
+              "title": "Internet use"
+            }
+          ]
+        }
+      },
+      {
+        "mark": {"type": "line", "color": "blueviolet", "strokeDash": [6, 3]},
+        "transform": [
+          {
+            "regression": "Anxiety Rate",
+            "on": "Internet use",
+            "extent": [0, 100]
+          }
+        ],
+        "encoding": {
+          "x": {"field": "Anxiety Rate", "type": "quantitative"},
+          "y": {"field": "Internet use", "type": "quantitative"}
+        }
+      },
+      {
+        "transform": [
+          {
+            "regression": "Internet use",
+            "on": "Anxiety Rate",
+            "params": true
+          },
+          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+        ],
+        "mark": {
+          "type": "text",
+          "color": "blueviolet",
+          "x": "width",
+          "align": "right",
+          "y": -10
+        },
+        "encoding": {"text": {"type": "nominal", "field": "R2"}}
+      }
+    ]
+  }

@@ -1,0 +1,43 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple bar chart with embedded data.",
+    "title": {
+      "text": "Urbanisation Rate",
+      "subtitle": "Urban population in China, Mexico and Malaysia from 2000 to 2022. Source: The World Bank",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "middle",
+      "color": "black"
+    },
+    "height": 325,
+    "width": 500,
+    "data": {
+    "values": 
+    [{"Country": "China", "Year": 2000, "Urbanisation Rate": 35.88}, {"Country": "China", "Year": 2001, "Urbanisation Rate": 37.09}, {"Country": "China", "Year": 2002, "Urbanisation Rate": 38.43}, {"Country": "China", "Year": 2003, "Urbanisation Rate": 39.78}, {"Country": "China", "Year": 2004, "Urbanisation Rate": 41.14}, {"Country": "China", "Year": 2005, "Urbanisation Rate": 42.52}, {"Country": "China", "Year": 2006, "Urbanisation Rate": 43.87}, {"Country": "China", "Year": 2007, "Urbanisation Rate": 45.2}, {"Country": "China", "Year": 2008, "Urbanisation Rate": 46.54}, {"Country": "China", "Year": 2009, "Urbanisation Rate": 47.88}, {"Country": "China", "Year": 2010, "Urbanisation Rate": 49.23}, {"Country": "China", "Year": 2011, "Urbanisation Rate": 50.51}, {"Country": "China", "Year": 2012, "Urbanisation Rate": 51.77}, {"Country": "China", "Year": 2013, "Urbanisation Rate": 53.01}, {"Country": "China", "Year": 2014, "Urbanisation Rate": 54.26}, {"Country": "China", "Year": 2015, "Urbanisation Rate": 55.5}, {"Country": "China", "Year": 2016, "Urbanisation Rate": 56.74}, {"Country": "China", "Year": 2017, "Urbanisation Rate": 57.96}, {"Country": "China", "Year": 2018, "Urbanisation Rate": 59.15}, {"Country": "China", "Year": 2019, "Urbanisation Rate": 60.31}, {"Country": "China", "Year": 2020, "Urbanisation Rate": 61.43}, {"Country": "China", "Year": 2021, "Urbanisation Rate": 62.51}, {"Country": "Mexico", "Year": 2000, "Urbanisation Rate": 74.72}, {"Country": "Mexico", "Year": 2001, "Urbanisation Rate": 75.05}, {"Country": "Mexico", "Year": 2002, "Urbanisation Rate": 75.37}, {"Country": "Mexico", "Year": 2003, "Urbanisation Rate": 75.68}, {"Country": "Mexico", "Year": 2004, "Urbanisation Rate": 76.0}, {"Country": "Mexico", "Year": 2005, "Urbanisation Rate": 76.31}, {"Country": "Mexico", "Year": 2006, "Urbanisation Rate": 76.62}, {"Country": "Mexico", "Year": 2007, "Urbanisation Rate": 76.92}, {"Country": "Mexico", "Year": 2008, "Urbanisation Rate": 77.22}, {"Country": "Mexico", "Year": 2009, "Urbanisation Rate": 77.52}, {"Country": "Mexico", "Year": 2010, "Urbanisation Rate": 77.82}, {"Country": "Mexico", "Year": 2011, "Urbanisation Rate": 78.11}, {"Country": "Mexico", "Year": 2012, "Urbanisation Rate": 78.41}, {"Country": "Mexico", "Year": 2013, "Urbanisation Rate": 78.7}, {"Country": "Mexico", "Year": 2014, "Urbanisation Rate": 78.99}, {"Country": "Mexico", "Year": 2015, "Urbanisation Rate": 79.29}, {"Country": "Mexico", "Year": 2016, "Urbanisation Rate": 79.58}, {"Country": "Mexico", "Year": 2017, "Urbanisation Rate": 79.87}, {"Country": "Mexico", "Year": 2018, "Urbanisation Rate": 80.16}, {"Country": "Mexico", "Year": 2019, "Urbanisation Rate": 80.44}, {"Country": "Mexico", "Year": 2020, "Urbanisation Rate": 80.73}, {"Country": "Mexico", "Year": 2021, "Urbanisation Rate": 81.02}, {"Country": "Malaysia", "Year": 2000, "Urbanisation Rate": 61.98}, {"Country": "Malaysia", "Year": 2001, "Urbanisation Rate": 62.92}, {"Country": "Malaysia", "Year": 2002, "Urbanisation Rate": 63.86}, {"Country": "Malaysia", "Year": 2003, "Urbanisation Rate": 64.78}, {"Country": "Malaysia", "Year": 2004, "Urbanisation Rate": 65.69}, {"Country": "Malaysia", "Year": 2005, "Urbanisation Rate": 66.59}, {"Country": "Malaysia", "Year": 2006, "Urbanisation Rate": 67.48}, {"Country": "Malaysia", "Year": 2007, "Urbanisation Rate": 68.36}, {"Country": "Malaysia", "Year": 2008, "Urbanisation Rate": 69.23}, {"Country": "Malaysia", "Year": 2009, "Urbanisation Rate": 70.08}, {"Country": "Malaysia", "Year": 2010, "Urbanisation Rate": 70.91}, {"Country": "Malaysia", "Year": 2011, "Urbanisation Rate": 71.61}, {"Country": "Malaysia", "Year": 2012, "Urbanisation Rate": 72.28}, {"Country": "Malaysia", "Year": 2013, "Urbanisation Rate": 72.93}, {"Country": "Malaysia", "Year": 2014, "Urbanisation Rate": 73.58}, {"Country": "Malaysia", "Year": 2015, "Urbanisation Rate": 74.21}, {"Country": "Malaysia", "Year": 2016, "Urbanisation Rate": 74.84}, {"Country": "Malaysia", "Year": 2017, "Urbanisation Rate": 75.45}, {"Country": "Malaysia", "Year": 2018, "Urbanisation Rate": 76.04}, {"Country": "Malaysia", "Year": 2019, "Urbanisation Rate": 76.61}, {"Country": "Malaysia", "Year": 2020, "Urbanisation Rate": 77.16}, {"Country": "Malaysia", "Year": 2021, "Urbanisation Rate": 77.7}]},
+   
+    "mark": {"type": "line", "point": true},
+   
+    "encoding": {
+      "x": {"field": "Year", "type": "nominal", "axis": {"labelAngle": 90}},
+      "y": {"field": "Urbanisation Rate", "type": "quantitative","title": "Urban population (% of total population)"},
+      "tooltip": [
+        {"field": "Year", "type": "nominal", "title": "Year"},
+        {
+          "field": "Urbanisation Rate",
+          "type": "quantitative",
+          "title": "Urban population"
+        },
+        {"field": "Country", "type": "ordinal", "title": "Country"}
+      ],
+      "color": {
+        "field": "Country",
+        "scale": {
+          "range": [
+            "blue",
+            "purple",
+            "pink"
+          ]
+        }
+      }
+    }
+  }

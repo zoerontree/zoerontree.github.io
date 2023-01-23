@@ -1,0 +1,69 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": [
+        "Anxiety disorders and Social Media usage,",
+        "25-29 year olds"
+      ],
+      "subtitle": [
+        "Loess regression on share of 25-29 year old population, 2019.",
+        "Source: IHME, World Bank"
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "color": "black"
+    },
+    "data": {
+      "values": [{"Country": "Afghanistan", "Internet Usage": 17.6, "Anxiety Disorders": 6.49}, {"Country": "Albania", "Internet Usage": 68.55, "Anxiety Disorders": 4.75}, {"Country": "Algeria", "Internet Usage": 57.9, "Anxiety Disorders": 6.45}, {"Country": "Angola", "Internet Usage": 32.4, "Anxiety Disorders": 5.31}, {"Country": "Argentina", "Internet Usage": 79.9, "Anxiety Disorders": 6.48}, {"Country": "Armenia", "Internet Usage": 66.54, "Anxiety Disorders": 3.99}, {"Country": "Australia", "Internet Usage": 88.6, "Anxiety Disorders": 8.87}, {"Country": "Austria", "Internet Usage": 87.75, "Anxiety Disorders": 7.49}, {"Country": "Azerbaijan", "Internet Usage": 81.1, "Anxiety Disorders": 3.16}, {"Country": "Bahamas", "Internet Usage": 85.0, "Anxiety Disorders": 5.59}, {"Country": "Bahrain", "Internet Usage": 99.7, "Anxiety Disorders": 6.72}, {"Country": "Bangladesh", "Internet Usage": 23.8, "Anxiety Disorders": 4.03}, {"Country": "Belarus", "Internet Usage": 82.79, "Anxiety Disorders": 4.48}, {"Country": "Belgium", "Internet Usage": 90.28, "Anxiety Disorders": 6.4}, {"Country": "Belize", "Internet Usage": 50.8, "Anxiety Disorders": 5.42}, {"Country": "Benin", "Internet Usage": 22.4, "Anxiety Disorders": 4.09}, {"Country": "Bhutan", "Internet Usage": 53.5, "Anxiety Disorders": 4.13}, {"Country": "Bolivia", "Internet Usage": 47.47, "Anxiety Disorders": 7.8}, {"Country": "Bosnia and Herzegovina", "Internet Usage": 69.95, "Anxiety Disorders": 4.39}, {"Country": "Botswana", "Internet Usage": 61.0, "Anxiety Disorders": 4.56}, {"Country": "Brazil", "Internet Usage": 73.91, "Anxiety Disorders": 9.74}, {"Country": "Brunei", "Internet Usage": 95.0, "Anxiety Disorders": 3.65}, {"Country": "Bulgaria", "Internet Usage": 67.95, "Anxiety Disorders": 4.2}, {"Country": "Burkina Faso", "Internet Usage": 18.0, "Anxiety Disorders": 3.95}, {"Country": "Burundi", "Internet Usage": 6.2, "Anxiety Disorders": 5.18}, {"Country": "Cameroon", "Internet Usage": 33.5, "Anxiety Disorders": 4.06}, {"Country": "Canada", "Internet Usage": 96.5, "Anxiety Disorders": 6.46}, {"Country": "Cape Verde", "Internet Usage": 61.94, "Anxiety Disorders": 3.93}, {"Country": "Central African Republic", "Internet Usage": 8.3, "Anxiety Disorders": 5.89}, {"Country": "Chad", "Internet Usage": 9.8, "Anxiety Disorders": 4.3}, {"Country": "Chile", "Internet Usage": 86.1, "Anxiety Disorders": 7.24}, {"Country": "China", "Internet Usage": 64.11, "Anxiety Disorders": 3.01}, {"Country": "Colombia", "Internet Usage": 65.01, "Anxiety Disorders": 6.14}, {"Country": "Costa Rica", "Internet Usage": 81.2, "Anxiety Disorders": 5.55}, {"Country": "Cote d'Ivoire", "Internet Usage": 36.29, "Anxiety Disorders": 4.15}, {"Country": "Croatia", "Internet Usage": 79.08, "Anxiety Disorders": 4.46}, {"Country": "Cuba", "Internet Usage": 67.97, "Anxiety Disorders": 5.48}, {"Country": "Cyprus", "Internet Usage": 86.06, "Anxiety Disorders": 8.03}, {"Country": "Czechia", "Internet Usage": 80.87, "Anxiety Disorders": 3.95}, {"Country": "Democratic Republic of Congo", "Internet Usage": 12.5, "Anxiety Disorders": 5.12}, {"Country": "Denmark", "Internet Usage": 98.05, "Anxiety Disorders": 6.13}, {"Country": "Djibouti", "Internet Usage": 59.0, "Anxiety Disorders": 4.67}, {"Country": "Dominican Republic", "Internet Usage": 75.8, "Anxiety Disorders": 5.78}, {"Country": "Ecuador", "Internet Usage": 61.6, "Anxiety Disorders": 7.21}, {"Country": "Egypt", "Internet Usage": 57.28, "Anxiety Disorders": 6.19}, {"Country": "El Salvador", "Internet Usage": 50.49, "Anxiety Disorders": 5.77}, {"Country": "Estonia", "Internet Usage": 90.23, "Anxiety Disorders": 4.34}, {"Country": "Ethiopia", "Internet Usage": 22.0, "Anxiety Disorders": 5.07}, {"Country": "Finland", "Internet Usage": 89.61, "Anxiety Disorders": 5.09}, {"Country": "France", "Internet Usage": 83.34, "Anxiety Disorders": 7.92}, {"Country": "Gabon", "Internet Usage": 61.0, "Anxiety Disorders": 5.36}, {"Country": "Gambia", "Internet Usage": 34.5, "Anxiety Disorders": 4.23}, {"Country": "Georgia", "Internet Usage": 68.85, "Anxiety Disorders": 3.17}, {"Country": "Germany", "Internet Usage": 88.13, "Anxiety Disorders": 7.53}, {"Country": "Ghana", "Internet Usage": 53.0, "Anxiety Disorders": 3.81}, {"Country": "Greece", "Internet Usage": 75.67, "Anxiety Disorders": 7.27}, {"Country": "Grenada", "Internet Usage": 56.0, "Anxiety Disorders": 5.5}, {"Country": "Guatemala", "Internet Usage": 44.4, "Anxiety Disorders": 5.52}, {"Country": "Guinea", "Internet Usage": 23.0, "Anxiety Disorders": 4.25}, {"Country": "Guinea-Bissau", "Internet Usage": 19.4, "Anxiety Disorders": 3.92}, {"Country": "Haiti", "Internet Usage": 33.3, "Anxiety Disorders": 5.94}, {"Country": "Honduras", "Internet Usage": 39.39, "Anxiety Disorders": 5.4}, {"Country": "Hungary", "Internet Usage": 80.37, "Anxiety Disorders": 4.25}, {"Country": "Iceland", "Internet Usage": 99.0, "Anxiety Disorders": 6.43}, {"Country": "India", "Internet Usage": 29.4, "Anxiety Disorders": 3.66}, {"Country": "Indonesia", "Internet Usage": 47.69, "Anxiety Disorders": 4.52}, {"Country": "Iran", "Internet Usage": 77.77, "Anxiety Disorders": 9.98}, {"Country": "Iraq", "Internet Usage": 60.0, "Anxiety Disorders": 7.12}, {"Country": "Ireland", "Internet Usage": 87.0, "Anxiety Disorders": 9.1}, {"Country": "Israel", "Internet Usage": 86.79, "Anxiety Disorders": 4.65}, {"Country": "Italy", "Internet Usage": 76.1, "Anxiety Disorders": 7.17}, {"Country": "Japan", "Internet Usage": 92.73, "Anxiety Disorders": 2.98}, {"Country": "Kazakhstan", "Internet Usage": 81.88, "Anxiety Disorders": 2.7}, {"Country": "Kenya", "Internet Usage": 22.57, "Anxiety Disorders": 4.98}, {"Country": "Kiribati", "Internet Usage": 36.9, "Anxiety Disorders": 4.81}, {"Country": "Kuwait", "Internet Usage": 99.54, "Anxiety Disorders": 6.33}, {"Country": "Kyrgyzstan", "Internet Usage": 51.0, "Anxiety Disorders": 2.6}, {"Country": "Laos", "Internet Usage": 30.84, "Anxiety Disorders": 5.55}, {"Country": "Latvia", "Internet Usage": 86.14, "Anxiety Disorders": 4.79}, {"Country": "Lebanon", "Internet Usage": 80.9, "Anxiety Disorders": 8.04}, {"Country": "Lesotho", "Internet Usage": 42.3, "Anxiety Disorders": 4.55}, {"Country": "Liberia", "Internet Usage": 22.0, "Anxiety Disorders": 4.45}, {"Country": "Lithuania", "Internet Usage": 81.58, "Anxiety Disorders": 5.4}, {"Country": "Luxembourg", "Internet Usage": 97.12, "Anxiety Disorders": 6.66}, {"Country": "Malawi", "Internet Usage": 9.9, "Anxiety Disorders": 5.44}, {"Country": "Malaysia", "Internet Usage": 84.19, "Anxiety Disorders": 5.61}, {"Country": "Maldives", "Internet Usage": 62.5, "Anxiety Disorders": 4.25}, {"Country": "Mali", "Internet Usage": 24.2, "Anxiety Disorders": 3.48}, {"Country": "Malta", "Internet Usage": 85.78, "Anxiety Disorders": 7.85}, {"Country": "Mauritania", "Internet Usage": 36.7, "Anxiety Disorders": 3.5}, {"Country": "Mauritius", "Internet Usage": 61.73, "Anxiety Disorders": 4.66}, {"Country": "Mexico", "Internet Usage": 70.07, "Anxiety Disorders": 4.83}, {"Country": "Mongolia", "Internet Usage": 51.08, "Anxiety Disorders": 2.71}, {"Country": "Montenegro", "Internet Usage": 73.48, "Anxiety Disorders": 4.54}, {"Country": "Morocco", "Internet Usage": 74.38, "Anxiety Disorders": 6.44}, {"Country": "Mozambique", "Internet Usage": 15.1, "Anxiety Disorders": 5.69}, {"Country": "Myanmar", "Internet Usage": 34.9, "Anxiety Disorders": 4.85}, {"Country": "Namibia", "Internet Usage": 40.5, "Anxiety Disorders": 4.47}, {"Country": "Nepal", "Internet Usage": 32.8, "Anxiety Disorders": 4.18}, {"Country": "Netherlands", "Internet Usage": 93.29, "Anxiety Disorders": 8.54}, {"Country": "New Zealand", "Internet Usage": 90.2, "Anxiety Disorders": 11.55}, {"Country": "Nicaragua", "Internet Usage": 37.8, "Anxiety Disorders": 5.71}, {"Country": "Nigeria", "Internet Usage": 33.6, "Anxiety Disorders": 3.94}, {"Country": "North Macedonia", "Internet Usage": 81.41, "Anxiety Disorders": 4.48}, {"Country": "Norway", "Internet Usage": 98.0, "Anxiety Disorders": 8.72}, {"Country": "Oman", "Internet Usage": 90.3, "Anxiety Disorders": 5.67}, {"Country": "Pakistan", "Internet Usage": 17.07, "Anxiety Disorders": 4.51}, {"Country": "Palestine", "Internet Usage": 70.62, "Anxiety Disorders": 7.44}, {"Country": "Panama", "Internet Usage": 63.63, "Anxiety Disorders": 4.84}, {"Country": "Paraguay", "Internet Usage": 68.52, "Anxiety Disorders": 8.19}, {"Country": "Peru", "Internet Usage": 59.95, "Anxiety Disorders": 7.68}, {"Country": "Philippines", "Internet Usage": 43.03, "Anxiety Disorders": 5.74}, {"Country": "Poland", "Internet Usage": 80.44, "Anxiety Disorders": 3.98}, {"Country": "Portugal", "Internet Usage": 75.35, "Anxiety Disorders": 10.01}, {"Country": "Puerto Rico", "Internet Usage": 77.74, "Anxiety Disorders": 5.72}, {"Country": "Qatar", "Internet Usage": 99.65, "Anxiety Disorders": 5.13}, {"Country": "Romania", "Internet Usage": 73.66, "Anxiety Disorders": 4.1}, {"Country": "Russia", "Internet Usage": 82.64, "Anxiety Disorders": 4.14}, {"Country": "Rwanda", "Internet Usage": 26.0, "Anxiety Disorders": 5.11}, {"Country": "Saint Lucia", "Internet Usage": 50.7, "Anxiety Disorders": 5.52}, {"Country": "Sao Tome and Principe", "Internet Usage": 32.0, "Anxiety Disorders": 3.93}, {"Country": "Saudi Arabia", "Internet Usage": 95.72, "Anxiety Disorders": 6.07}, {"Country": "Senegal", "Internet Usage": 39.5, "Anxiety Disorders": 3.68}, {"Country": "Serbia", "Internet Usage": 77.42, "Anxiety Disorders": 4.16}, {"Country": "Seychelles", "Internet Usage": 75.0, "Anxiety Disorders": 4.54}, {"Country": "Sierra Leone", "Internet Usage": 16.8, "Anxiety Disorders": 4.65}, {"Country": "Singapore", "Internet Usage": 88.95, "Anxiety Disorders": 3.57}, {"Country": "Slovakia", "Internet Usage": 82.85, "Anxiety Disorders": 4.26}, {"Country": "Slovenia", "Internet Usage": 83.11, "Anxiety Disorders": 4.26}, {"Country": "South Africa", "Internet Usage": 68.2, "Anxiety Disorders": 4.95}, {"Country": "South Korea", "Internet Usage": 96.16, "Anxiety Disorders": 4.06}, {"Country": "South Sudan", "Internet Usage": 5.6, "Anxiety Disorders": 7.03}, {"Country": "Spain", "Internet Usage": 90.72, "Anxiety Disorders": 6.23}, {"Country": "Sri Lanka", "Internet Usage": 29.0, "Anxiety Disorders": 4.97}, {"Country": "Sudan", "Internet Usage": 25.9, "Anxiety Disorders": 6.44}, {"Country": "Suriname", "Internet Usage": 68.75, "Anxiety Disorders": 5.35}, {"Country": "Sweden", "Internet Usage": 94.49, "Anxiety Disorders": 6.31}, {"Country": "Switzerland", "Internet Usage": 93.15, "Anxiety Disorders": 8.85}, {"Country": "Syria", "Internet Usage": 34.65, "Anxiety Disorders": 7.84}, {"Country": "Tanzania", "Internet Usage": 20.0, "Anxiety Disorders": 5.41}, {"Country": "Thailand", "Internet Usage": 66.65, "Anxiety Disorders": 4.21}, {"Country": "Timor", "Internet Usage": 29.0, "Anxiety Disorders": 4.72}, {"Country": "Togo", "Internet Usage": 19.3, "Anxiety Disorders": 4.55}, {"Country": "Tunisia", "Internet Usage": 66.7, "Anxiety Disorders": 7.01}, {"Country": "Turkey", "Internet Usage": 73.98, "Anxiety Disorders": 6.1}, {"Country": "Uganda", "Internet Usage": 14.7, "Anxiety Disorders": 5.74}, {"Country": "Ukraine", "Internet Usage": 70.12, "Anxiety Disorders": 4.17}, {"Country": "United Arab Emirates", "Internet Usage": 99.15, "Anxiety Disorders": 5.54}, {"Country": "United Kingdom", "Internet Usage": 92.52, "Anxiety Disorders": 5.74}, {"Country": "United States", "Internet Usage": 89.43, "Anxiety Disorders": 8.5}, {"Country": "Uruguay", "Internet Usage": 83.35, "Anxiety Disorders": 6.9}, {"Country": "Uzbekistan", "Internet Usage": 70.4, "Anxiety Disorders": 2.57}, {"Country": "Vietnam", "Internet Usage": 68.66, "Anxiety Disorders": 2.84}, {"Country": "World", "Internet Usage": 54.01, "Anxiety Disorders": 4.75}, {"Country": "Zambia", "Internet Usage": 16.8, "Anxiety Disorders": 5.58}, {"Country": "Zimbabwe", "Internet Usage": 25.1, "Anxiety Disorders": 4.06}]
+    },
+    "width": 350,
+    "height": 350,
+    "layer": [
+      {
+        "mark": {"type": "point", "filled": true},
+        "encoding": {
+          "x": {"field": "Internet Usage", "type": "quantitative"},
+          "y": {
+            "field": "Anxiety Disorders",
+            "type": "quantitative"
+          },
+          "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country"},
+            {
+              "field": "Anxiety Disorders",
+              "type": "quantitative",
+              "title": "Anxiety Disorders",
+              "format": ".2f"
+            },
+            {
+              "field": "Internet Usage",
+              "type": "quantitative",
+              "title": "Social Media usage",
+              "format": ".2f"
+            }
+          ]
+        }
+      },
+      {
+        "mark": {"type": "line", "color": "purple"},
+        "transform": [
+          {
+            "loess": "Anxiety Disorders",
+            "on": "Internet Usage"
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "Internet Usage",
+            "type": "quantitative",
+            "axis": {"title": "Share of the population using Social Media (%)"}
+          },
+          "y": {
+            "field": "Anxiety Disorders",
+            "type": "quantitative",
+            "axis": {"title": "Share of the population with anxiety disorders (%)"}
+          }
+        }
+      }
+    ]
+  }

@@ -1,0 +1,56 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/zoerontree/zoerontree.github.io/main/anx_srates_vega.csv"
+    },
+    "title": {
+      "text": "Anxiety Disorder and Suicide Rates",
+      "subtitle": ["Percentage of the population (%)",
+      "Source: World Health Organisation and World Bank"
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 11,
+      "anchor": "start",
+      "color": "black"
+      },
+    "height": 300,
+    "width": 300,
+    "layer": [
+      {
+        "mark": {"opacity": 0.5, "type": "point"},
+        "encoding": {
+          "x": {
+            "field": "Anxiety Disorder Rate",
+            "title": "Anxiety Disorder Rate",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "Suicide Rate",
+            "title": "Suicide Rate",
+            "type": "quantitative"
+          },
+          "tooltip": [{"field": "Country", "type": "nominal", "title": "Country"}]
+        }
+      },
+      {
+        "data": {
+          "values": [
+            {
+              "x": 2,
+              "y": 262.05
+            },
+            {
+              "x": 9,
+              "y": -17.93
+            }
+        ]
+      },
+      "mark": {"type": "line", "color": "black"},
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"}
+      }
+    }
+    ]
+}   
+    
