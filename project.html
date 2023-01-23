@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+</head>
+
+<body>
+    <!--Website Navigation Buttons-->
+    <div class="topboard">
+        <div class="navbuttons">
+            <button class="button" style="vertical-align:middle" onclick="location.href='index.html'"><span>Home </span></button>
+            <button class="button" style="vertical-align:middle" onclick="location.href='portfolio.html'"><span>Portfolio </span></button>
+            <button class="button" style="vertical-align:middle" onclick="location.href='project.html'"><span>Project </span></button>
+            <button class="button" style="vertical-align:middle" onclick="location.href='https://github.com/zoerontree/zoerontree.github.io'"><span>GitHub </span></button>
+        </div> 
+    </div> 
+
+    <!--Heading-->
+    <div class="topbar">
+        <h4>PROJECT</h4>
+    </div>
+    
+    <!--Title-->
+
+        <div class="main1">
+            <H2>IS THERE A CORRELATION BETWEEN INTERNET USE AND MENTAL HEALTH DISORDERS?</H2>
+            <p>This project aims to examine mental health disorders and analyse whether internet access and the proliferation of internet usage for young people is correlated with prevalent mental health disorders. Through the project, I would like to understand the most common disorders, those with accelerating prevalence and also demographic impact. Specifically, I would like to assess whether there is a relationship between internet usage and the mental health disorders within various parameters, such as age group and region.</p>
+        </div>
+    <container class="acontainer">
+    </container>
+
+    <!--Prevelence of mental health disorders and internet access-->
+    <container class="bcontainer">   
+        <div class="main2">
+            <h2>Prevalence of mental health disorders and internet use globally</h2>  
+            <P>I generated a choropleth map with variable layers to view both mental health disorders and internet usage. The ubiquity of mental health disorders is immediately clear. Evidence from maps shows concentration of high internet usage and high mental health disorders within the European region.</P>    
+            <iframe src="https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/pj0vbnliv5sx29r/keplergl_bqodunm.json"></iframe>
+        <container class="bcontainer"> 
+            <p> Data 
+                <a href="https://colab.research.google.com/drive/1-2hNkiIf5t0HO9nE65qEgWF6ko68DnRf?usp=share_link">code</a>
+                used to clean and merge the data. Kepler map 
+                <a href="https://colab.research.google.com/drive/1gMEfh5PzUldRhy3eaUrXt1xP2M_DETw1?usp=sharing">code</a>
+                used to correctly configure the dataset. Internet data will automatically refresh due to World Bank API. Disorders data can be replicated using locally sourced data set.</p></p>
+        </container>
+        </div>
+
+    </container>
+
+     <!-- Patterns -->  
+    <container class="bcontainer">   
+        <div class="main2">
+            <h2>Patterns in Mental Health Disorders</h2>
+            <p>To begin narrowing the analysis, I wanted to assess which are the most prevalent mental health disorders, but also which has had the most significant change over time. I computed the percentage change over time and used machine learning to visualise the trend. Although anxiety disorders are the most common, eating disorders appear to have the greatest rate of change. </p>
+            <div class="chart" id="Chart2"></div>
+            <div class="chart" id="Chart3"></div>
+        <container class="bcontainer"> 
+            <p> Data 
+                <a href="https://colab.research.google.com/drive/1kZ8_kzLKrBwbkxamad3sKb-HCYdkTu6W?usp=sharing">analysis</a>
+                used for prevalance. Data 
+                <a href="https://colab.research.google.com/drive/1S7BCUIopxMc_lRZwQ_ljK0Wpn3RZu7ss?usp=sharing">analysis</a>
+                 used for relative change.</p></p>
+        </container>
+    </div>
+    </container>
+
+    <!-- Trends over time -->   
+    <container class="bcontainer">   
+        <div class="main2">
+            <h2>Trends over time: Europe</h2>
+            <p>As eating disorders have had the greatest change over time, I wanted to analyse which age groups were most affected and compare whether internet usage had the same upwards trajectory.</p>
+            <div class="chart" id="Chart4"></div>
+            <div class="chart" id="Chart5"></div>
+            <p>The data shows that as the internet began to gain popularity, the share of young people suffering from eating disorders rose exponentially.</p>
+        <container class="bcontainer"> 
+            <p> 
+                <a href="https://colab.research.google.com/drive/1-TyiJJEqk242onWMlrdd_vxAc-91o58Y?usp=sharing">World Bank</a>
+                API with formatting. Data 
+                <a href="https://colab.research.google.com/drive/1QOCCVYKYj9jeS8mtAW9aeTDNkdjvrHtr?usp=sharing">analysis</a>
+                 used for eating disorders in Europe over time.</p></p>
+        </container>
+     </div>
+    </container>
+
+    <!-- Establishing a link -->  
+    <container class="bcontainer">   
+        <div class="main2">
+            <h2>Is there a correlation?</h2>
+            <p>To assess whether the popularity of the internet in Europe can be substantially linked to higher mental health disorders, I focused on the age groups with the greatest increase over time, 15-19 and 20-24. The linear regressions showed a positive but very weak correlation between mental health disorders and internet use for ages 15-24. Moreover, the Pearson correlation shows a strong, positive association.</p>
+            <div class="chart" id="Chart6"></div>
+            <div class="chart" id="Chart7"></div>
+            <h3>Pearson Correlation</h3>
+            <img class="chart" src="pearson.png" alt="pearson" width="400" height="200">
+        <container class="bcontainer"> 
+            <p> Data 
+                <a href="https://colab.research.google.com/drive/1oUbGsinELbTKRVNZZCIPN7rhGv8G1YwI?usp=sharing">analysis</a>
+                for the linear regression of anxiety disorders. Data 
+                <a href="https://colab.research.google.com/drive/1Ky6mENFOHcwJ5fG20lKlDoTUliCprMVg?usp=sharing">analysis</a>
+                 for the linear regression of eating disorders. 
+                 <a href="https://colab.research.google.com/drive/1t2f5seDtMkOAtCld_cJFykQs-u5Aee03?usp=sharing"> Machine learning</a>
+                  to compute pearson correlaton for eating disorders. Eurostat API requests ensure European internet data is replicable.</p></p>
+        </container>
+    </div>
+    </container>
+    
+        <!-- Write up -->  
+    <container class="acontainer">
+    </container>
+    <div class="main2">
+        <h3>Challenges in data cleaning and analysis</h3>
+        <p>The IHME has a poor API integration making it difficult to get the data using XML requests, so instead, I downloaded the data locally. Although this eliminated automation, it remains replicable. For analysis, there was limited need to scrape websites as necessary datasets were readily available through local download or from an API.</p>
+        <p>Unfortunately, data from the World Bank API had country lettering discrepancies from the IHME datasets which significantly decreased the output, so for some values I had to manually clean the dataset and ensure the countries matched.</p>
+        <p>Effective visualisation was my focus, therefore required a lot of data manipulation and extra calculations to code. For example, to analyse trends over time for mental health disorders, I had to compute relative changes as well as merging age group datasets to compile relevant information. Furthermore, I found that running linear regressions was very one dimensional, and did not contribute much in analysis, therefore I attempted to run a Pearson correlation to try and capture the relationship over time.</p>
+    </div>
+
+    <container class="acontainer">
+    </container>
+    <div class="main2">
+        <h3>Conclusions</h3>
+        <p>Currently there is little correlation between given mental health disorders and internet usage. However, there is evidence to suggest that for ages 15-24, growth in eating disorders and increasing internet usage could be linked. The data shows commonalities in trends between internet usage and eating disorders for young people over time. However, I have only focused on the most prevalent mental health disorders recently (anxiety disorder) and the greatest increase over time (eating disorder); there are other mental health disorders that could be assessed which may more strongly correlated. Going forward, I would want to look more closely at the relationship over time between mental health disorders and internet usage by geography.</p>
+        <p>To conclude, there is a clear prevalence of mental health disorders across the globe and trends in Europe provide reason to think carefully about the implications of internet usage for young people.</p>
+    </div>
+
+    <container class="acontainer">
+    </container>
+    <div class="main2">
+        <h3>References</h3>
+        <p>Eurostat: Original Data Source:
+            <a href="https://ec.europa.eu/eurostat/databrowser/view/ISOC_CI_IFP_IU__custom_4620950/default/table?lang=en">Individuals - internet use</a> 
+        </p>
+        <p>IHME database: 
+            <a href="https://vizhub.healthdata.org/gbd-results/">
+                Original Data Source </a> 
+        </p>
+        <p>World Bank: Original Data Source: 
+            <a href="https://data.worldbank.org/indicator/IT.NET.USER.ZS">
+                Individuals using the internet (%)</a>
+        </p>
+    </div>
+    <container class="acontainer">
+    </container>
+ 
+</body>
+
+<footer></footer>
+
+</container>
+
+
+
+    <script>
+        //Define charts:
+        var myChart1 = "projtest.json";
+        var myChart2 = "prevmental.json";
+        var myChart3 = "relchange.json"
+        var myChart4 = "internet_use_euro.json"
+        var myChart5 = "eating_event.json"
+        var myChart6 = "anx_int.json"
+        var myChart7 = "eat_int.json"
+
+
+        // Embed charts:
+        vegaEmbed('#Chart1', myChart1);
+        vegaEmbed('#Chart2', myChart2);
+        vegaEmbed('#Chart3', myChart3);
+        vegaEmbed('#Chart4', myChart4);
+        vegaEmbed('#Chart5', myChart5);
+        vegaEmbed('#Chart6', myChart6);
+        vegaEmbed('#Chart7', myChart7);
+
+    
+    </script>
+    

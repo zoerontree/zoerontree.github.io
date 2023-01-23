@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+   
+</head>
+
+<body>
+    <!--Website Navigation Buttons-->
+    <div class="topboard">
+        <div class="navbuttons">
+            <button class="button" style="vertical-align:middle" onclick="location.href='index.html'"><span>Home </span></button>
+            <button class="button" style="vertical-align:middle" onclick="location.href='portfolio.html'"><span>Portfolio </span></button>
+            <button class="button" style="vertical-align:middle" onclick="location.href='project.html'"><span>Project </span></button>
+            <button class="button" style="vertical-align:middle" onclick="location.href='https://github.com/zoerontree/zoerontree.github.io'"><span>GitHub </span></button>
+        </div> 
+    </div> 
+
+    <!--Heading-->
+    <div class="topbar">
+        <h4>PORTFOLIO</h4>
+    </div>
+
+    <!-- Week 1 -->
+    <div class="main1">
+        <h2>Week 1</h2>
+        <p>Embed charts into my page from the
+            <a href="https://github.com/RDeconomist/RDeconomist.github.io/tree/main/charts">Rapidcharts</a>
+            repository.</p>
+        <div class="chart" id="Chart1"></div>
+        <div class="chart" id="Chart2"></div>
+        <p>These charts show the daily price change in Bitcoin and Ethereum.</p>
+    </div>
+
+    <container class="acontainer">
+    </container>
+
+    <!-- Week 2 -->
+
+    <div class="main1">
+        <h2>Week 2</h2>
+        <p>Replicate a graph from the FT and generate new modified version.</p>
+        <h3>IMF Chart</h3>
+        <div class="chart" id="Chart3"></div>
+
+        <h3>IMF Chart Improved </h3>
+        <div class="chart" id="Chart4"></div>
+
+        <p>The chart illustartes that the most risky year was 1984 as the IMF lending outstanding as a proportion of GDP was at its highest. </p>
+
+    </div>
+
+    <container class="acontainer">
+    </container>
+
+    <!-- Week 3 -->
+
+    <div class="main1">
+        <h2>Week 3</h2>
+        <p>Convert a csv file to dictionary format using a inline data source with more than 100 data points and 3 dimensions. Create second chart to improve visualisation. </p>
+        <div class="chart" id="Chart5"></div>
+
+    <p>I altered the chart type, axes and colours as it represents the data more clearly, to depict number of billionaires in each country and their industry allocation. </p>
+    <div class="chart" id="Chart6"></div>
+        <p> The link to my 
+            <a href="https://colab.research.google.com/drive/1KaADu7G_KHof4qNtGPWFAUoc5mQC9GEt?usp=sharing">Google Colab</a>
+            for the task in Week 3.</p></p>
+        </div>  
+    
+    <container class="acontainer">
+    </container>
+
+    <!-- Week 4 -->
+
+     <div class="main1">
+        <h2>Week 4</h2>
+        <p>Implement a data scraper.</p>
+        <div class="chart" id="Chart7"></div>
+            
+        <p> I chose this site as there was no csv file available and Wikipedia allowed me to scrape from the their site, therefore I could collate the data needed for the chart. </p>
+        <p> The link to my 
+            <a href="https://colab.research.google.com/drive/1o6olm8QHZYfUmGiZ5GRKwlbrpKjqhJzA?usp=sharing">Google Colab</a>
+            for the task in Week 4.</p></p>  
+
+               
+    <container class="acontainer">
+    </container>
+
+    <!-- Week 5 -->
+
+    <div class="main1">
+        <h2>Week 5</h2>
+        <p>Use the ONS API to batch download nine different series as JSON files.</p>
+        <span style="color: rgb(0, 4, 82); font-size: 15px; ; font-style: italic;">All data is a chain volume measure seasonally adjusted (CVM SA), indexed to 1.d.p.</span>
+
+        <div class="grid-container" style = "display: grid">
+            <div class="grid-item"><div class = dashchart id = "Chart8" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart9" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart10" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart11" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart12" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart13" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart14" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart15" style = "display: block;"></div></div>
+            <div class="grid-item"><div class = dashchart id = "Chart16" style = "display: block;"></div></div>
+
+        </div>
+        <p> The link to my 
+            <a href="https://colab.research.google.com/drive/1SRp2WTTgKDR8v5gYwsAtF9rjUWRK2ASu?usp=sharing">Google Colab</a>
+            ONS API.</p></p>
+        </div>
+
+    <container class="acontainer">
+    </container>
+       
+     <!-- Week 6 -->
+     <div class="main1">
+        <h2>Week 6</h2>
+         <p><span class="multicolortext">No tasks assigned!</span></p> 
+     </div>
+    <container class="acontainer">
+    </container>
+ 
+    <!-- Week 7 -->
+
+    <div class="main1">
+        <h2>Week 7</h2>
+        <p>Produce two maps: a base map and a choropleth.</p>
+        <div class="chart" id="Chart17"></div>
+        <div class="chart" id="Chart18"></div>
+
+    <container class="acontainer">
+    </container>
+    
+    <!-- Week 8 -->
+    <div class="main1">
+        <h2>Week 8</h2>
+        <p>Produce two charts that support or refute an argument made at the Festival of Economics.</p>
+        <p>John Turner and Will Quinn spoke about the the history of financial bubbles and claimed that China is currently experiencing a potentially catastrophic real-estate bubble.</p>
+    
+         <div class="chart" id="Chart19"></div>
+        <div class="chart" id="Chart20"></div>
+        <p>The line chart indexing prices to 2015 shows a rapid 50% in only 6 years. However, lower urban population than other typical middle-income economies suggests real rather than speculative housing demand.</p>
+    </div>
+    <container class="acontainer">
+    </container>
+    
+     <!-- Week 9 -->
+     <div class="main1">
+         <h2>Week 9</h2>
+         <p>Advanced Charts.</p>
+            <p> Code:
+            <a href="https://colab.research.google.com/drive/1ICnnOeIpBd0D13N9y7-b_--tNN8UAU6x?usp=sharing">Linear Regresson</a>
+           </p>
+            <div class="chart" id="Chart21"></div>
+            <p> Code:
+            <a href="https://colab.research.google.com/drive/1Ist11JQHLkFWoTDqdYzMbElOyEc9Nq-9?usp=sharing">Loess Regresson</a>
+            </p>
+            <div class="chart" id="Chart22"></div>
+            <p> Code:
+                <a href="https://colab.research.google.com/drive/1S94B1tFPShN1THsvyd137_O460VefisA?usp=sharing">World Bank API</a>
+            </p>
+        </div>
+
+    <container class="acontainer">
+    </container>
+
+        <!-- Week 10&11 -->
+     <div class="main1">
+        <h2>Week 10 & 11</h2>
+        <p>Machine Learning.</p>
+        <div class="chart" id="Chart23"></div>
+        <p> The link to the 
+            <a href="https://colab.research.google.com/drive/17NNTl3tE1Hvt0qgCuzNIS2AcLdjsgJIs?usp=sharing">code</a>
+            used to regress the data.</p></p>
+        <p>
+                <a href="https://colab.research.google.com/drive/1rwQdtfXsyb6DwWQhnNzfRwt1xw09vYZR?usp=sharing">WHO API</a>
+                </p></p>
+     </div>
+
+</body>
+
+
+<script>
+    //Define charts:
+    var myChart1 = "week1_crypto1.json";
+    var myChart2 = "week1_crypto2.json";
+    var myChart3 = "week2_IMF.json"
+    var myChart4 = "week2_IMFimproved.json"
+    var myChart5 = "week3_inline.json"
+    var myChart6 = "week3_inlinemod.json"
+    var myChart7 = "week4_billionaires.json"
+    var myChart8 = "week5_ONS_ecyc.json"
+    var myChart9 = "week5_ONS_ecyd.json"
+    var myChart10 = "week5_ONS_ecyg.json"
+    var myChart11 = "week5_ONS_ecyh.json"
+    var myChart12 = "week5_ONS_ecyi.json"
+    var myChart13 = "week5_ONS_ecyj.json"
+    var myChart14 = "week5_ONS_ecyk.json"
+    var myChart15 = "week5_ONS_ecyl.json"
+    var myChart16 = "week5_ONS_ecyp.json"
+    var myChart17 = "week7_europemap.json"
+    var myChart18 = "week7_eurobillion.json"
+    var myChart19 = "week8_chinahousingprice.json"
+    var myChart20 = "week8_urbanisation.json"
+    var myChart21 = "week9_anxintreg.json"
+    var myChart22 = "week9_loessreg.json"
+    var myChart23 = "week10&11.json"
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3' ,myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+    vegaEmbed('#Chart8', myChart8);
+    vegaEmbed('#Chart9', myChart9);
+    vegaEmbed('#Chart10',myChart10);
+    vegaEmbed('#Chart11',myChart11);
+    vegaEmbed('#Chart12',myChart12);
+    vegaEmbed('#Chart13',myChart13);
+    vegaEmbed('#Chart14',myChart14);
+    vegaEmbed('#Chart15',myChart15);
+    vegaEmbed('#Chart16',myChart16);
+    vegaEmbed('#Chart17',myChart17);
+    vegaEmbed('#Chart18',myChart18);
+    vegaEmbed('#Chart19',myChart19);
+    vegaEmbed('#Chart20',myChart20);
+    vegaEmbed('#Chart21',myChart21);
+    vegaEmbed('#Chart22',myChart22);
+    vegaEmbed('#Chart23',myChart23);
+
+</script>
